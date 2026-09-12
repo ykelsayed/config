@@ -21,7 +21,10 @@ in
   ];
   fonts.fontconfig.enable = true;
   home.sessionVariables.EDITOR = "nvim";
-
+home.sessionPath = [
+  "/nix/var/nix/profiles/default/bin"
+  "/run/current-system/sw/bin"
+];
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;      # ghost text from history
